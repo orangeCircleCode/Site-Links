@@ -22,10 +22,10 @@
 	}
 
 	.header {
-		background-color: #f1f1f1;
-		padding: 30px;
+		background-color: #b1b1b1;
+		padding: 20px;
 		text-align: center;
-		font-size: 35px;
+		font-size: 30px;
 	}
 
 	.row {
@@ -34,6 +34,28 @@
 		background-color: rgb(75, 73, 73);
 	}
 
+	.column {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	h2 {
+		display: flex;
+		flex-direction: column;
+		margin: auto;
+		padding: 30px 20px 20px 20px;
+		color: aqua;
+	}
+
+	h2 a {
+		text-decoration: none;
+		color: aqua;
+	}
+	h2 a:hover{
+
+		text-shadow: 1px 1px 2px black, 0 0 25px rgb(0, 255, 242), 0 0 5px darkblue;
+	}
 	.footer {
 		background-color: #f1f1f1;
 		padding: 10px;
@@ -50,31 +72,67 @@
 
 <body>
 	<div class="header">
-		<h2>Some Sample Sites</h2>
+		<h1>Some Sample Sites</h1>
 	</div>
 	<div class="row">
-		<iframe width="100%" height="400" src="https://occ-barber.netlify.com/"></iframe>
-		<iframe width="100%" height="400" src="http://arronmccrory.com/bia-portfolio/"></iframe>
+		<div class="column">
+			<h2><a href="https://occ-barber.netlify.com/" target="_blank">Hugo Services Site</a></h2>
+			<iframe width="100%" height="400" src="https://occ-barber.netlify.com/"></iframe>
+		</div>
+		<div class="column">
+			<h2><a href="http://arronmccrory.com/bia-portfolio/" target="_blank">Wordpress Site</a></h2>
+			<iframe width="100%" height="400" src="http://arronmccrory.com/bia-portfolio/"></iframe>
+		</div>
 	</div>
 	<div class="row">
-		<iframe width="100%" height="400" src="https://daily-grind.netlify.com/"></iframe>
-		<iframe width="100%" height="400" src="https://occ-template-portfolio.netlify.com/"></iframe>
+		<div class="column">
+			<h2><a href="https://daily-grind.netlify.com/" target="_blank">Hugo Restaurant Site</a></h2>
+			<iframe width="100%" height="400" src="https://daily-grind.netlify.com/"></iframe>
+		</div>
+		<div class="column">
+			<h2><a href="https://occ-template-portfolio.netlify.com/" target="_blank">Marketing Site</a></h2>
+			<iframe width="100%" height="400" src="https://occ-template-portfolio.netlify.com/"></iframe>
+		</div>
 	</div>
 	<div class="row">
+			<div class="column">
+					<h2><a href="http://fashion.biamccrory.com/" target="_blank">Wordpress Portfolio Site</a></h2>
 		<iframe width="100%" height="400" src="http://fashion.biamccrory.com/"></iframe>
+		</div>
+		<div class="column">
+				<h2><a href="https://occ-template-insurance.netlify.com/" target="_blank">Insurance Company Site</a></h2>
 		<iframe width="100%" height="400" src="https://occ-template-insurance.netlify.com/"></iframe>
+		</div>
 	</div>
 	<div class="row">
+			<div class="column">
+					<h2><a href="https://occ-template-construction.netlify.com/" target="_blank">Construction Company Site</a></h2>
 		<iframe width="100%" height="400" src="https://occ-template-construction.netlify.com/"></iframe>
+		</div>
+		<div class="column">
+				<h2><a href="https://occ-template-product.netlify.com/" target="_blank">Online Retail Site</a></h2>
 		<iframe width="100%" height="400" src="https://occ-template-product.netlify.com/"></iframe>
+		</div>
 	</div>
 	<div class="row">
+			<div class="column">
+					<h2><a href="https://occ-template-directory.netlify.com/" target="_blank">Directory Site</a></h2>
 		<iframe width="100%" height="400" src="https://occ-template-directory.netlify.com/"></iframe>
+		</div>
+		<div class="column">
+				<h2><a href="https://occ-hugo-coffee-site.netlify.com/" target="_blank">Hugo Product Site</a></h2>
 		<iframe width="100%" height="400" src="https://occ-hugo-coffee-site.netlify.com/"></iframe>
+		</div>
 	</div>
 	<div class="row">
+			<div class="column">
+					<h2><a href="http://biamccrory.com/" target="_blank">Developer Site</a></h2>
 		<iframe width="100%" height="400" src="http://biamccrory.com/"></iframe>
+		</div>
+		<div class="column">
+				<h2><a href="https://occ-template-agency.netlify.com/" target="_blank">Marketing Site</a></h2>
 		<iframe width="100%" height="400" src="https://occ-template-agency.netlify.com/"></iframe>
+		</div>
 	</div>
 	<div class="footer">
 		<p>Orange Circle Company | https://orangecirclecompany.com</p>
